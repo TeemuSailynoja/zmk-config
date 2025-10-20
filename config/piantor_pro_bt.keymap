@@ -27,11 +27,18 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp APOS  &none  &none  &mt LEFT_WIN A  &mt LALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G  &kp M  &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_ALT I  &mt RIGHT_WIN O  &none  &none  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp MINUS  &none  &lt 0 ESCAPE  &lt 0 SPACE  &lt 0 TAB  &lt 0 RETURN  &lt 0 BACKSPACE  &lt 0 DELETE
+&none  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp APOS  &none  &none  &mt LEFT_WIN A  &mt LALT R  &mt LEFT_CONTROL S  &lt 1 T  &kp G  &kp M  &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_ALT I  &mt RIGHT_WIN O  &none  &none  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp MINUS  &none  &lt 0 ESCAPE  &lt 0 SPACE  &lt 0 TAB  &lt 3 RETURN  &lt 2 BACKSPACE  &lt 0 DELETE
             >;
         };
 
-        lower_layer {
+        shifted_alphas {
+            display-name = "COLEMAK-DH";
+            bindings = <
+&none  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp LS(J)  &kp LS(L)  &kp LS(U)  &kp LS(Y)  &kp DOUBLE_QUOTES  &none  &none  &mt LEFT_WIN A  &mt LALT R  &mt LEFT_CONTROL S  &lt 1 T  &kp G  &kp LS(M)  &mt RIGHT_SHIFT LS(N)  &mt RIGHT_CONTROL LS(E)  &mt RIGHT_ALT LS(I)  &mt RIGHT_WIN LS(O)  &none  &none  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp LS(K)  &kp LS(H)  &kp SEMICOLON  &kp COLON  &kp UNDER  &none  &lt 0 ESCAPE  &lt 0 SPACE  &lt 0 TAB  &lt 3 RETURN  &lt 2 BACKSPACE  &lt 0 DELETE
+            >;
+        };
+
+        number_layer {
             display-name = "NUMBER";
 
             // -----------------------------------------------------------------------------------------
@@ -45,7 +52,7 @@
             >;
         };
 
-        raise_layer {
+        symbol_layer {
             display-name = "SYMBOL";
 
             // -----------------------------------------------------------------------------------------

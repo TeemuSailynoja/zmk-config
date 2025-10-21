@@ -15,15 +15,6 @@
     keymap {
         compatible = "zmk,keymap";
 
-        shifted_alphas {
-            display-name = "COLEMAK-DH";
-            bindings = <
-&none  &kp LS(Q)  &kp LS(W)  &kp LS(F)  &kp LS(P)  &kp LS(B)  &kp LS(J)  &kp LS(L)  &kp LS(U)  &kp LS(Y)  &kp DOUBLE_QUOTES  &none  &none  &mt LEFT_WIN LS(A)  &mt LALT LS(R)  &mt LEFT_CONTROL S  &lt 0 T  &kp LS(G)  &kp LS(M)  &mt RIGHT_SHIFT LS(N)  &mt RIGHT_CONTROL LS(E)  &mt RIGHT_ALT LS(I)  &mt RIGHT_WIN LS(O)  &none  &none  &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(D)  &kp LS(V)  &kp LS(K)  &kp LS(H)  &kp SEMICOLON  &kp COLON  &kp UNDER  &none  &kp ESCAPE  &kp SPACE  &kp TAB  &kp RET  &kp BSPC  &kp DEL
-            >;
-
-            label = "SHIFT";
-        };
-
         default_layer {
             display-name = "COLEMAK-DH";
 
@@ -34,7 +25,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp APOS  &none  &none  &mt LEFT_WIN A  &mt LALT R  &mt LEFT_CONTROL S  &lt 0 T  &kp G  &kp M  &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_ALT I  &mt RIGHT_WIN O  &none  &none  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp MINUS  &none  &lt 1 ESCAPE  &lt 1 SPACE  &lt 1 TAB  &lt 3 RETURN  &lt 2 BACKSPACE  &lt 1 DELETE
+&none  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp APOS  &none  &none  &mt LEFT_WIN A  &mt LALT R  &mt LEFT_CONTROL S  &lt 5 T  &kp G  &kp M  &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_ALT I  &mt RIGHT_WIN O  &none  &none  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp MINUS  &none  &lt 0 ESCAPE  &lt 0 SPACE  &lt 0 TAB  &lt 2 RETURN  &lt 1 BACKSPACE  &lt 0 DELETE
             >;
         };
 
@@ -59,11 +50,27 @@
             >;
         };
 
+        function_layer {
+            display-name = "FUNCTION";
+            bindings = <
+&none  &kp F11  &kp F4  &kp F5  &kp F6  &kp PRINTSCREEN  &trans  &trans  &trans  &trans  &trans  &none  &none  &kp F10  &kp F1  &kp F2  &kp F3  &kp SCROLLLOCK  &trans  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &none  &none  &kp F12  &kp F7  &kp F8  &kp F9  &kp PAUSE_BREAK  &trans  &trans  &trans  &trans  &trans  &none  &kp C_MENU  &kp SPACE  &kp TAB  &trans  &trans  &trans
+            >;
+        };
+
         layer_5 {
-            display-name = "EXTRA 5";
+            display-name = "FUNCTION";
             bindings = <
 &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &trans  &trans  &trans  &trans  &trans  &trans
             >;
+        };
+
+        shifted_alphas {
+            display-name = "COLEMAK-DH";
+            bindings = <
+&none  &kp LS(Q)  &kp LS(W)  &kp LS(F)  &kp LS(P)  &kp LS(B)  &kp LS(J)  &kp LS(L)  &kp LS(U)  &kp LS(Y)  &kp DOUBLE_QUOTES  &none  &none  &mt LEFT_WIN LS(A)  &mt LALT LS(R)  &mt LEFT_CONTROL S  &lt 5 T  &kp LS(G)  &kp LS(M)  &mt RIGHT_SHIFT LS(N)  &mt RIGHT_CONTROL LS(E)  &mt RIGHT_ALT LS(I)  &mt RIGHT_WIN LS(O)  &none  &none  &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(D)  &kp LS(V)  &kp LS(K)  &kp LS(H)  &kp SEMICOLON  &kp COLON  &kp UNDER  &none  &kp ESCAPE  &kp SPACE  &kp TAB  &kp RET  &kp BSPC  &kp DEL
+            >;
+
+            label = "SHIFT";
         };
     };
 };

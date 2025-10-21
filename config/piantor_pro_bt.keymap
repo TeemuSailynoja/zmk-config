@@ -25,7 +25,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp APOS  &none  &none  &mt LEFT_WIN A  &mt LALT R  &mt LEFT_CONTROL S  &lt 5 T  &kp G  &kp M  &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_ALT I  &mt RIGHT_WIN O  &none  &none  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp MINUS  &none  &lt 0 ESCAPE  &lt 0 SPACE  &lt 0 TAB  &lt 2 RETURN  &lt 1 BACKSPACE  &lt 0 DELETE
+&none  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp APOS  &none  &none  &mt LEFT_WIN A  &mt LALT R  &mt LEFT_CONTROL S  &lt 8 T  &kp G  &kp M  &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_ALT I  &mt RIGHT_WIN O  &none  &none  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp MINUS  &none  &lt 0 ESCAPE  &lt 0 SPACE  &lt 0 TAB  &lt 2 RETURN  &lt 1 BACKSPACE  &lt 3 DELETE
             >;
         };
 
@@ -57,8 +57,28 @@
             >;
         };
 
+        layer_7 {
+            bindings = <
+&none  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp APOS  &none  &none  &kp A  &kp R  &kp S  &kp T  &kp G  &kp M  &kp N  &kp E  &kp I  &kp O  &none  &none  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp MINUS  &none  &kp ESC  &kp SPACE  &kp TAB  &lt 2 ENTER  &lt 1 BACKSPACE  &lt 3 DEL
+            >;
+        };
+
         layer_5 {
-            display-name = "FUNCTION";
+            display-name = "NAV";
+            bindings = <
+&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_6 {
+            display-name = "MOUSE";
+            bindings = <
+&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_8 {
+            display-name = "MEDIA";
             bindings = <
 &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &trans  &trans  &trans  &trans  &trans  &trans
             >;
@@ -67,7 +87,7 @@
         shifted_alphas {
             display-name = "COLEMAK-DH";
             bindings = <
-&none  &kp LS(Q)  &kp LS(W)  &kp LS(F)  &kp LS(P)  &kp LS(B)  &kp LS(J)  &kp LS(L)  &kp LS(U)  &kp LS(Y)  &kp DOUBLE_QUOTES  &none  &none  &mt LEFT_WIN LS(A)  &mt LALT LS(R)  &mt LEFT_CONTROL S  &lt 5 T  &kp LS(G)  &kp LS(M)  &mt RIGHT_SHIFT LS(N)  &mt RIGHT_CONTROL LS(E)  &mt RIGHT_ALT LS(I)  &mt RIGHT_WIN LS(O)  &none  &none  &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(D)  &kp LS(V)  &kp LS(K)  &kp LS(H)  &kp SEMICOLON  &kp COLON  &kp UNDER  &none  &kp ESCAPE  &kp SPACE  &kp TAB  &kp RET  &kp BSPC  &kp DEL
+&none  &kp LS(Q)  &kp LS(W)  &kp LS(F)  &kp LS(P)  &kp LS(B)  &kp LS(J)  &kp LS(L)  &kp LS(U)  &kp LS(Y)  &kp DOUBLE_QUOTES  &none  &none  &mt LEFT_WIN LS(A)  &mt LALT LS(R)  &mt LEFT_CONTROL S  &lt 8 T  &kp LS(G)  &kp LS(M)  &mt RIGHT_SHIFT LS(N)  &mt RIGHT_CONTROL LS(E)  &mt RIGHT_ALT LS(I)  &mt RIGHT_WIN LS(O)  &none  &none  &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(D)  &kp LS(V)  &kp LS(K)  &kp LS(H)  &kp SEMICOLON  &kp COLON  &kp UNDER  &none  &kp ESCAPE  &kp SPACE  &kp TAB  &kp RET  &kp BSPC  &kp DEL
             >;
 
             label = "SHIFT";

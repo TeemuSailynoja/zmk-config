@@ -25,7 +25,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp APOS  &none  &none  &mt LEFT_WIN A  &mt LALT R  &mt LEFT_CONTROL S  &lt 8 T  &kp G  &kp M  &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_ALT I  &mt RIGHT_WIN O  &none  &none  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp MINUS  &none  &lt 0 ESCAPE  &lt 0 SPACE  &lt 0 TAB  &lt 2 RETURN  &lt 1 BACKSPACE  &lt 3 DELETE
+&none  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp APOS  &none  &none  &mt LEFT_WIN A  &mt LALT R  &mt LEFT_CONTROL S  &lt 8 T  &kp G  &kp M  &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_ALT I  &mt RIGHT_WIN O  &none  &none  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp MINUS  &none  &lt 7 ESCAPE  &lt 5 SPACE  &lt 6 TAB  &lt 2 RETURN  &lt 1 BACKSPACE  &lt 3 DELETE
             >;
         };
 
@@ -57,27 +57,27 @@
             >;
         };
 
-        layer_7 {
+        base2 {
             bindings = <
-&none  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp APOS  &none  &none  &kp A  &kp R  &kp S  &kp T  &kp G  &kp M  &kp N  &kp E  &kp I  &kp O  &none  &none  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp MINUS  &none  &kp ESC  &kp SPACE  &kp TAB  &lt 2 ENTER  &lt 1 BACKSPACE  &lt 3 DEL
+&none  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp APOS  &none  &none  &kp LGUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &kp G  &kp M  &kp N  &kp E  &kp I  &kp O  &none  &none  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp MINUS  &none  &lt 7 ESC  &lt 5 SPACE  &lt 6 TAB  &lt 2 ENTER  &lt 1 BACKSPACE  &lt 3 DEL
             >;
         };
 
-        layer_5 {
+        nav_layer {
             display-name = "NAV";
             bindings = <
 &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
-        layer_6 {
+        mouse_layer {
             display-name = "MOUSE";
             bindings = <
 &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
-        layer_8 {
+        media_layer {
             display-name = "MEDIA";
             bindings = <
 &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &trans  &trans  &trans  &trans  &trans  &trans
